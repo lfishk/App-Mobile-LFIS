@@ -28,7 +28,7 @@ html {
 .close_button {
 	position: fixed;
 	bottom: 30px;
-	left: 15px;
+	left: 20px;
 	z-index:10000;
 	display:none;
 	cursor: pointer;
