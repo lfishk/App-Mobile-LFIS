@@ -3,18 +3,14 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "hk.edu.lfis.lfiactu"
-        version   = "1.1">
+        id        = "hk.edu.lfis.lfis"
+        version   = "0.9">
 
-    <name>Actualité du LFI / FIS news</name>
+    <name>LFI / FIS</name>
 
-    <description>
-        Actualité du LFI / FIS news
-    </description>
+    <description>LFI / FIS</description>
 
-    <author href="http://www.lfihk.net/cit/" email="labbal@lfis.edu.hk">
-        Equipe CIT / CIT team
-    </author>
+    <author href="http://www.lfis.edu.hk" email="labbal@lfis.edu.hk">Atelier Numérique</author>
 
     <!--
         If you do not want any permissions to be added to your app, add the
