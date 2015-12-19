@@ -1,0 +1,64 @@
+.item_description  {
+	display:none;
+	text-align:justify;
+}
+
+.item_title {
+	display:block;
+}
+
+.item_date {
+	display:block;
+}
+
+@font-face {
+  font-family: "martelsans";
+  src: url("../font/MartelSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "playfairdisplaysc";
+  src: url("../font/PlayfairDisplaySC-Regular.ttf");
+}
+
+html {
+  font-family: "martelsans", sans-serif;
+}
+
+.close_button {
+	position: fixed;
+	top: 10px;
+	left: 5px;
+	z-index:10000;
+	display:none;
+	cursor: pointer;
+}
+
+.button-collapse {
+	padding-left:10px;
+}
+
+.anchor {
+	display:block;
+	float:none;
+	clear:both;
+}
+
+.navbar-fixed {
+    position: fixed;
+	top:0px;
+	left:0px;
+}
+
+.content{
+	clear:both;
+	height:1000px;
+	margin-top:64px;
+	overflow:auto;
+	z-index: 10000;
+}
+
+#xml_content {
+	padding-top:0px;
+	height:1000px;
+}
