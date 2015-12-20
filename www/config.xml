@@ -6,9 +6,9 @@
         id        = "hk.edu.lfis.lfis"
         version   = "0.9">
 
-    <name>Lycée Français International "Victor Segalen" de Hong Kong</name>
+    <name>Lycée Français International de Hong Kong</name>
 
-    <description>Lycée Français International "Victor Segalen" de Hong Kong</description>
+    <description>Lycée Français International de Hong Kong</description>
 
     <author href="http://www.lfis.edu.hk" email="labbal@lfis.edu.hk">Atelier Numérique</author>
 
