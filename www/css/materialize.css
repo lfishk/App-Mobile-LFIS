@@ -5059,8 +5059,11 @@ nav {
     @media only screen and (max-width : 992px) {
       nav .brand-logo {
         /*left: 50%;*/
-		left: 100px;
+		left: 0px;
 	    /* added */
+		display:block;
+		width:400px;
+		padding-left:250px;
 	    padding-top:3px;
         -webkit-transform: translateX(-50%);
         -moz-transform: translateX(-50%);
