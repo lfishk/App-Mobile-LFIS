@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "hk.edu.lfis.lfis"
-        version   = "0.9.1">
+        version   = "0.9.2">
 
     <name>Lycée Français International de Hong Kong</name>
 
@@ -36,7 +36,7 @@
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
     
 	<!-- Define a specific version of PhoneGap to build into your app. -->
-    <preference name="phonegap-version"       value="3.7.0" />
+    <preference name="phonegap-version"       value="6.3.0" />
     
 
     <!-- Plugins -->
