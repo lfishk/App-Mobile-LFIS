@@ -35,4 +35,3 @@ function xmlparser()
 	xmlhttp.send();
 }
 window.onload = xmlparser();
-			
