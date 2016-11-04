@@ -53,7 +53,7 @@ html {
 .content{
 	clear:both;
 	height:1000px;
-	margin-top:84px;
+	margin-top:74px;
 	overflow:auto;
 	z-index: 10000;
 }
