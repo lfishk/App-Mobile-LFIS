@@ -5,7 +5,7 @@ function xmlparser()
 	xmlhttp=new XMLHttpRequest();
 	/*xmlhttp.open("GET", "feed.xml", true);*/
 	xmlhttp.open("GET", "http://www.lfihk.net/lfi-feed/lfi-feed-fr.xml", true);
-	xmlhttp.overrideMimeType('text/xml; charset=iso-8859-1');
+	xmlhttp.overrideMimeType('text/xml; charset=UTF-8');
 	
 	xmlhttp.onreadystatechange=function()
 	{
