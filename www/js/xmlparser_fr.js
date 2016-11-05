@@ -14,7 +14,7 @@ function xmlparser()
 			xml_data = xmlhttp.responseXML;
 			items = xml_data.getElementsByTagName("item"); 
 						
-			xml_content = '<ul class="collapsible" data-collapsible="accordion">';
+			xml_content = '<ul class="collapsible popout" data-collapsible="accordion">';
 									
 			for (i=0;i<items.length;i++)
 			{
