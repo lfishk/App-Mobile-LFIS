@@ -19,20 +19,24 @@
 
 	<body>
 	
-		<nav>
-			<div class="nav-wrapper white">
-				<a href="#" class="grey-text text-darken-1">Actualit&eacute; du LFI</a>
-				<ul id="slide-out" class="side-nav fixed collection">
-					<li class="center-align" style="padding-top:20px;"><img src="images/icon.png" width="150"></li>
-					<li class="collection-item avatar"><a href="index.html"><i class="material-icons circle light-blue darken-3">chat</i>ACTUALITES</a></li>
-					<li class="collection-item avatar"><a href="#" onclick="window.open(encodeURI('https://www.fis.edu.hk/fr/'), '_blank', 'location=yes');"><i class="material-icons circle light-blue darken-3">public</i>SITE WEB</a></li>
-					<li class="collection-item avatar"><a href="#" onclick="window.open(encodeURI('http://pronote.fis.edu.hk'), '_blank', 'location=yes');"><i class="material-icons circle light-blue darken-3">school</i>PRONOTE</a></li>
-					<li class="collection-item avatar"><a href="#" onclick="window.open(encodeURI('http://engage.fis.edu.hk'), '_blank', 'location=yes');"><i class="material-icons circle light-blue darken-3">assignment_ind</i>ENGAGE</a></li>
-					<li class="collection-item avatar"><a href="about_fr.html"><i class="material-icons circle light-blue darken-3">info</i>A PROPOS</a></li>
-				</ul>
-				<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>	
-			</div>
-		</nav>	
+		<div class="navbar-fixed">
+			<nav>
+				<div class="nav-wrapper white">
+					<a href="" id="nav_title" class="grey-text text-darken-1">Actualit&eacute; du LFI</a>
+					<span id="button_sidebar"><a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a></span>
+					<span id="button_back" style="display:none;"><a href="#" class="button-collapse"><i class="material-icons" style="color:red;">arrow_back</i></a></span>
+				</div>
+			</nav>	
+		</div>
+		
+		<ul id="slide-out" class="side-nav fixed collection">
+			<li class="center-align" style="padding-top:20px;"><img src="images/icon.png" width="150"></li>
+			<li class="collection-item avatar"><a href="index.html"><i class="material-icons circle light-blue darken-3">chat</i>ACTUALITES</a></li>
+			<li class="collection-item avatar"><a href="#" onclick="window.open(encodeURI('https://www.fis.edu.hk/fr/'), '_blank', 'location=yes');"><i class="material-icons circle light-blue darken-3">public</i>SITE WEB</a></li>
+			<li class="collection-item avatar"><a href="#" onclick="window.open(encodeURI('http://pronote.fis.edu.hk'), '_blank', 'location=yes');"><i class="material-icons circle light-blue darken-3">school</i>PRONOTE</a></li>
+			<li class="collection-item avatar"><a href="#" onclick="window.open(encodeURI('http://engage.fis.edu.hk'), '_blank', 'location=yes');"><i class="material-icons circle light-blue darken-3">assignment_ind</i>ENGAGE</a></li>
+			<li class="collection-item avatar"><a href="about_fr.html"><i class="material-icons circle light-blue darken-3">info</i>A PROPOS</a></li>
+		</ul>
 
 		<div class="row" >
 			<div id="content" class="col s12 content">
@@ -49,11 +53,66 @@
 				<li><a class="btn-floating blue-grey darken-3" href="index_en.html">EN</a></li>
 			</ul>
 		</div>
-		
+
+
+		<!--JS-->
+		<script type="text/javascript">
+			function read(i)
+			{
+				var element = document.getElementById(i);  
+				var display = window.getComputedStyle(element, null).getPropertyValue("display");
+
+				if (display == 'none')
+				{
+					document.getElementById(i).style.display = "block";
+					document.getElementById('nav_title').style.paddingLeft = "0px";
+
+					for (n=0;n<100;n++)
+					{
+						if (n !== i)
+						{
+							document.getElementById('title_' + n).style.display = "none";
+							document.getElementById('date_' + n).style.display = "none";
+							document.getElementById('button_sidebar').style.display = "none";
+							
+							document.getElementById('button_back').style.display = "inline";
+							document.getElementById('button_back').innerHTML='<a href="#a_' + i + '" onclick="read('+ i +')" class="button-collapse" style="display:inline;pointer-events:auto;"><i class="material-icons" style="color:red;">arrow_back</i></a>';
+						}
+					}
+
+				} else {
+					document.getElementById(i).style.display = "none";
+					//document.getElementById('nav_title').style.paddingLeft = "70px";
+
+					for (n=0;n<100;n++)
+					{
+						if (n !== i)
+						{
+							document.getElementById('title_' + n).style.display = "block";
+							document.getElementById('date_' + n).style.display = "block";
+							document.getElementById('button_sidebar').style.display = "inline";
+							document.getElementById('button_back').style.display = "none";
+							
+						}
+					}
+				}
+			}
+		</script>		
+		<script type="text/javascript">
+			function resize()
+            {
+                var heights = window.innerHeight;
+				heights = heights - 94;
+                document.getElementById('content').style.height = heights + "px";
+            }
+            window.onload = resize();
+            window.onresize = function() {
+                resize();
+            };
+		</script>		
 		<script type="text/javascript" src="js/xmlparser_fr.js"></script>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>		
-		
 		<script type="text/javascript" src="js/init.js"></script>
 		<script type="text/javascript" src="cordova.js"></script>
 	</body>
