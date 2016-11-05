@@ -1,9 +1,9 @@
 header, main, footer, #content {
-	padding-left: 320px;
+	padding-left: 260px;
 }
 
 .nav-wrapper {
-	padding-left: 300px;
+	padding-left: 240px;
 }
 
 nav a.button-collapse {
@@ -29,6 +29,11 @@ nav a i.material-icons {
 	}
 }
 
+#nav_title {
+	position:relative;
+	top:4px;
+}
+
 .item_description  {
 	display:none;
 	text-align:justify;
@@ -40,6 +45,26 @@ nav a i.material-icons {
 
 .item_date {
 	display:block;
+}
+
+.collection .collection-item.avatar {
+    min-height: 0px;
+    padding-left: 72px;
+    position: relative;
+}
+
+.side-nav a:hover {
+    background-color: white;
+}
+
+.side-nav a {
+    color: rgba(0,0,0,0.87);
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 10px 0 10px;
 }
 
 @font-face {
