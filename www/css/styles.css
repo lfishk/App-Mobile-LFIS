@@ -45,7 +45,7 @@ nav .button-collapse {
 .item_description  {
 	display:none;
 	text-align:justify;
-	padding:0px 10px 10px 10px;
+	padding:0px 10px 10px 20px;
 }
 
 .item_title {
@@ -74,6 +74,18 @@ nav .button-collapse {
     height: 48px;
     line-height: 48px;
     padding: 0 10px 0 10px;
+}
+
+.side-nav li.active {
+    background-color: rgba(0,0,0,0);
+}
+
+.side-nav .collapsible-header:hover, .side-nav.fixed .collapsible-header:hover {
+    background-color: rgba(0,0,0,0);
+}
+
+.side-nav .collapsible-body li a, .side-nav.fixed .collapsible-body li a {
+    padding: 0 5px 0 16px;
 }
 
 @font-face {
@@ -125,7 +137,7 @@ html {
 }
 
 #xml_content {
-	padding:0px 10px 0px 20px;
+	padding:0px 10px 0px 10px;
 	/*height:1000px;*/
 }
 

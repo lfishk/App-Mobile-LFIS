@@ -10,3 +10,7 @@ $(document).ready(function(){
     $('.collapsible').collapsible();
   });
   
+$('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 240
+    }
+);
