@@ -45,6 +45,7 @@ nav .button-collapse {
 .item_description  {
 	display:none;
 	text-align:justify;
+	width:100%;
 	padding:0px 10px 10px 20px;
 }
 
