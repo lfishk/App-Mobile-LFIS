@@ -103,12 +103,22 @@ nav .button-collapse {
 	padding:0px 10px 10px 30px;
 }
 
+
+
 .item_title {
 	display:block;
 }
 
 .item_date {
 	display:block;
+}
+
+.collection .collection-item {
+    background-color: #fff;
+    line-height: 0rem;
+    padding: 10px 20px 4px 20px;
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .collection .collection-item.avatar {
@@ -135,6 +145,14 @@ nav .button-collapse {
     background-color: rgba(0,0,0,0);
 }
 
+.side-nav .collapsible-header, .side-nav.fixed .collapsible-header {
+    background-color: transparent;
+    border: none;
+    line-height: inherit;
+    height: inherit;
+    padding: 0 10px;
+}
+
 .side-nav .collapsible-header:hover, .side-nav.fixed .collapsible-header:hover {
     background-color: rgba(0,0,0,0);
 }
@@ -142,6 +160,8 @@ nav .button-collapse {
 .side-nav .collapsible-body li a, .side-nav.fixed .collapsible-body li a {
     padding: 0 5px 0 16px;
 }
+
+
 
 
 
