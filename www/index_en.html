@@ -5,9 +5,8 @@
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 		
-		
 		<!--Import materialize.css-->
-		<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
 		<!--Cutomization-->
 		<link type="text/css" rel="stylesheet" href="css/styles.css"/>
@@ -16,61 +15,70 @@
 	</head>
 
 	<body>
-	
-		<div class="navbar-fixed">
-			<nav class="white">
-				<div class="nav-wrapper">
-					<a href="#" class="grey-text text-darken-1 brand-logo">FIS News</a>
-					
-					<ul class="right hide-on-med-and-down" style="padding-right:80px;">
-						<li class="collection-item avatar">
-							<a href="index_en.html" style="color:#212121" target="_blank">NEWS</a>
-						</li>
-						<li class="collection-item avatar">
-							<a href="#" onclick="window.open(encodeURI('http://www.fis.edu.hk/web/Default.aspx?r=1&lang=en-en'), '_blank', 'location=yes');" style="color:#212121" target="_blank">WEBSITE</a>
-						</li>
-						<li class="collection-item avatar">
-							<a href="#" onclick="window.open(encodeURI('http://pronote.fis.edu.hk'), '_blank', 'location=yes');" style="color:#212121" target="_blank">PRONOTE</a>
-						</li>
-						<li class="collection-item avatar">
-							<a href="about_en.html" style="color:#212121">ABOUT</a>
-						</li>
-					</ul>					
-					
-					<ul id="slide-out" class="side-nav collection">
-						<div style="text-align:center;line-height:25px;padding-top:15px;"><a href="index_en.html"><img width="100" src="images/icon.png"></a></div>
-						<br />
-						<li class="collection-item avatar">
-							<i class="mdi-communication-chat circle light-blue darken-3"></i><a href="index_en.html">NEWS</a>
-						</li>
-						<li class="collection-item avatar">
-							<i class="mdi-action-bookmark circle light-blue darken-3"></i><a href="#" onclick="window.open(encodeURI('http://www.fis.edu.hk/web/Default.aspx?r=1&lang=en-en'), '_blank', 'location=yes');">WEBSITE</a>
-						</li>
-						<li class="collection-item avatar">
-							<i class="mdi-action-settings circle light-blue darken-3"></i><a href="#" onclick="window.open(encodeURI('http://pronote.fis.edu.hk'), '_blank', 'location=yes');">PRONOTE</a>
-						</li>
-						<li class="collection-item avatar">
-							<i class="mdi-action-visibility circle light-blue darken-3"></i><a href="about_en.html">ABOUT</a>
-						</li>
-					</ul>
-					<a href="#" data-activates="slide-out" class="button-collapse"><i class="light-blue-text text-darken-3 mdi-navigation-menu"></i></a>
-				</div>
-			</nav>
-		</div>
 
+		<ul id="slide-out" class="side-nav fixed collection">
+			<li class="center-align" style="padding-top:20px;"><img src="images/icon.png" width="120"></li>
+			<li class="collection-item avatar"><a href="index_en.html"><i class="material-icons circle light-blue darken-3">chat</i>NEWS</a></li>
+			<li class="collection-item avatar"><a href="#" onclick="window.open(encodeURI('https://www.fis.edu.hk/fr/'), '_blank', 'location=yes');"><i class="material-icons circle light-blue darken-3">public</i>SITE INTERNET</a></li>
+			
+			<li  class="collection-item avatar">
+				<ul class="collapsible collapsible-accordion">
+					<li>
+					<a class="collapsible-header"><i class="material-icons circle light-blue darken-3">email</i>EMAILS</a>
+					<div class="collapsible-body">
+						<ul>
+							<li><a href="#" onclick="window.open(encodeURI('https://outlook.office.com/owa/'), '_blank', 'location=yes');">Student</a></li>
+							<li><a href="#" onclick="window.open(encodeURI('https://outlook.office.com/owa/'), '_blank', 'location=yes');">Staff</a></li>
+						</ul>
+						</div>
+					</li>
+				</ul>
+			</li>				
+			
+			<li class="collection-item avatar"><a href="#" onclick="window.open(encodeURI('http://pronote.fis.edu.hk'), '_blank', 'location=yes');"><i class="material-icons circle light-blue darken-3">school</i>PRONOTE</a></li>
+
+			<li  class="collection-item avatar">
+				<ul class="collapsible collapsible-accordion">
+					<li>
+					<a class="collapsible-header"><i class="material-icons circle light-blue darken-3">assignment_ind</i>PORTALS</a>
+					<div class="collapsible-body">
+						<ul>
+							<li><a href="#" onclick="window.open(encodeURI('http://engage.fis.edu.hk'), '_blank', 'location=yes');">Parent</a></li>
+							<li><a href="#" onclick="window.open(encodeURI('http://engage.fis.edu.hk'), '_blank', 'location=yes');">Staff</a></li>
+							<li><a href="#" onclick="window.open(encodeURI('http://engage.fis.edu.hk'), '_blank', 'location=yes');">Student</a></li>
+						</ul>
+						</div>
+					</li>
+				</ul>
+			</li>		
+			
+			<li class="collection-item avatar"><a href="about_en.html"><i class="material-icons circle light-blue darken-3">info</i>ABOUT</a></li>
+			
+		</ul>
+
+		<div class="navbar-fixed">
+			<nav>
+				<div class="nav-wrapper white">
+					<a href="" id="nav_title" class="grey-text text-darken-1">FIS News</a>
+					<span id="button_sidebar"><a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a></span>
+					<span id="button_back" style="display:none;"><a href="#" class="button-collapse"><i class="material-icons" style="color:red;">arrow_back</i></a></span>
+				</div>
+			</nav>	
+		</div>
+		
 		<div class="row" >
 			<div id="content" class="col s12 content">
-				<div id="xml_content"><div style="text-align:center;padding:50px 0px 0px 0px;"><img src="images/loading.gif" width="64" /></div></div>
+				<div id="xml_content"><div style="text-align:center;padding:50px 0px 0px 0px;"><img src="images/loading.gif" width="64" style="width:64px;" /></div></div>
 			</div>
 		</div>
 		
 		<div class="fixed-action-btn" style="bottom: 24px; right: 24px;">
 			<a class="btn-floating btn-large red">
-				<i class="large mdi-action-translate"></i>
+				<i class="material-icons large">translate</i>
 			</a>
 			<ul>
-				<li><a class="btn-floating blue-grey darken-3" href="index.html">FR</a></li>
-				<li><a class="btn-floating blue-grey darken-3" href="index_en.html">EN</a></li>
+				<li><a href="index.html" class="btn-floating blue-grey darken-3" style="padding-top:3px;">FR</a></li>
+				<li><a href="index_en.html" class="btn-floating blue-grey darken-3" style="padding-top:3px;">EN</a></li>
 			</ul>
 		</div>
 
@@ -84,27 +92,34 @@
 				if (display == 'none')
 				{
 					document.getElementById(i).style.display = "block";
-					document.getElementById('close_' + i).style.display = "block";
-					
+					document.getElementById('nav_title').style.paddingLeft = "0px";
+
 					for (n=0;n<100;n++)
 					{
 						if (n !== i)
 						{
 							document.getElementById('title_' + n).style.display = "none";
 							document.getElementById('date_' + n).style.display = "none";
+							document.getElementById('button_sidebar').style.display = "none";
+							
+							document.getElementById('button_back').style.display = "inline";
+							document.getElementById('button_back').innerHTML='<a href="#a_' + i + '" onclick="read('+ i +')" class="button-collapse" style="display:inline;pointer-events:auto;"><i class="material-icons" style="color:red;">arrow_back</i></a>';
 						}
 					}
 
 				} else {
 					document.getElementById(i).style.display = "none";
-					document.getElementById('close_' + i).style.display = "none";
-					
+					//document.getElementById('nav_title').style.paddingLeft = "70px";
+
 					for (n=0;n<100;n++)
 					{
 						if (n !== i)
 						{
 							document.getElementById('title_' + n).style.display = "block";
 							document.getElementById('date_' + n).style.display = "block";
+							document.getElementById('button_sidebar').style.display = "inline";
+							document.getElementById('button_back').style.display = "none";
+							
 						}
 					}
 				}
@@ -114,7 +129,7 @@
 			function resize()
             {
                 var heights = window.innerHeight;
-				heights = heights - 84;
+				heights = heights - 94;
                 document.getElementById('content').style.height = heights + "px";
             }
             window.onload = resize();
@@ -122,8 +137,8 @@
                 resize();
             };
 		</script>		
-		<script type="text/javascript" src="js/xmlparser_en.js"></script>
-		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="js/getcontent_en.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/materialize.min.js"></script>		
 		<script type="text/javascript" src="js/init.js"></script>
 		<script type="text/javascript" src="cordova.js"></script>
