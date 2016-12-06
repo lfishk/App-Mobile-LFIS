@@ -10,9 +10,7 @@
   src: url('../fonts/Material-Design-Icons.woff2') format('woff2');
 }
 
-.lfi_img {
-	max-width:100%;
-}
+
 
 .material-icons {
   font-family: 'Material Icons';
@@ -214,4 +212,8 @@ html {
 
 #xml_content img {
 	width:100%;
+}
+
+.lfi_img {
+	max-width:200px;
 }
