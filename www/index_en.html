@@ -101,16 +101,15 @@
 							document.getElementById('title_' + n).style.display = "none";
 							document.getElementById('date_' + n).style.display = "none";
 							document.getElementById('button_sidebar').style.display = "none";
-							
 							document.getElementById('button_back').style.display = "inline";
 							document.getElementById('button_back').innerHTML='<a href="#a_' + i + '" onclick="read('+ i +')" class="button-collapse" style="display:inline;pointer-events:auto;"><i class="material-icons" style="color:red;">arrow_back</i></a>';
+							$(window).scrollTop(0);
 						}
 					}
 
 				} else {
 					document.getElementById(i).style.display = "none";
-					//document.getElementById('nav_title').style.paddingLeft = "70px";
-
+					
 					for (n=0;n<100;n++)
 					{
 						if (n !== i)
