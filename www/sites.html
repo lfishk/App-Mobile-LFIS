@@ -60,7 +60,7 @@
 		<div class="navbar-fixed">
 			<nav>
 				<div class="nav-wrapper white">
-					<a href="" id="nav_title" class="grey-text text-darken-1">Actualit&eacute; du LFI</a>
+					<a href="" id="nav_title" class="grey-text text-darken-1">Sites p&eacute;dagogiques du LFI</a>
 					<span id="button_sidebar"><a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a></span>
 					<span id="button_back" style="display:none;"><a href="#" class="button-collapse"><i class="material-icons" style="color:red;">arrow_back</i></a></span>
 				</div>
@@ -69,7 +69,7 @@
 		
 		<div class="row" >
 			<div id="content" class="col s12 content">
-				<div id="xml_content"><div style="text-align:center;padding:50px 0px 0px 0px;"><img src="images/loading.gif" width="64" style="width:64px;" /></div></div>
+				<div id="sites_content"><div style="text-align:center;padding:50px 0px 0px 0px;"><img src="images/loading.gif" width="64" style="width:64px;" /></div></div>
 			</div>
 		</div>
 		
@@ -83,61 +83,8 @@
 			</ul>
 		</div>
 
-		<!--JS-->
-		<script type="text/javascript">
-			function read(i)
-			{
-				var element = document.getElementById(i);  
-				var display = window.getComputedStyle(element, null).getPropertyValue("display");
-
-				if (display == 'none')
-				{
-					document.getElementById(i).style.display = "block";
-					document.getElementById('nav_title').style.paddingLeft = "0px";
-
-					for (n=0;n<100;n++)
-					{
-						if (n !== i)
-						{
-							document.getElementById('title_' + n).style.display = "none";
-							document.getElementById('date_' + n).style.display = "none";
-							document.getElementById('button_sidebar').style.display = "none";							
-							document.getElementById('button_back').style.display = "inline";
-							document.getElementById('button_back').innerHTML='<a href="#a_' + i + '" onclick="read('+ i +')" class="button-collapse" style="display:inline;pointer-events:auto;"><i class="material-icons" style="color:red;">arrow_back</i></a>';
-							$(window).scrollTop(0);
-						}
-					}
-
-				} else {
-					document.getElementById(i).style.display = "none";
-		
-					for (n=0;n<100;n++)
-					{
-						if (n !== i)
-						{
-							document.getElementById('title_' + n).style.display = "block";
-							document.getElementById('date_' + n).style.display = "block";
-							document.getElementById('button_sidebar').style.display = "inline";
-							document.getElementById('button_back').style.display = "none";
-							
-						}
-					}
-				}
-			}
-		</script>		
-		<script type="text/javascript">
-			function resize()
-            {
-                var heights = window.innerHeight;
-				heights = heights - 94;
-                document.getElementById('content').style.height = heights + "px";
-            }
-            window.onload = resize();
-            window.onresize = function() {
-                resize();
-            };
-		</script>		
-		<script type="text/javascript" src="js/getfeed_fr.js"></script>
+		<!--JS-->	
+		<script type="text/javascript" src="js/getsites.js"></script>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/materialize.min.js"></script>		
 		<script type="text/javascript" src="js/init.js"></script>
