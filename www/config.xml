@@ -3,28 +3,23 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-		versionCode="101"
-		ios-CFBundleVersion	= "101"
-		android-versionCode	= "101"
-        id        = "hk.edu.lfis.lfis"
-        version   = "1.0.1">
+        id        = "hk.edu.lfis.lfifis"
+        version   = "1.0">
 
     <name>Lycée Français International de Hong Kong</name>
-
-    <description>Lycée Français International de Hong Kong</description>
-
+    <description>Application du Lycée Français International de Hong Kong</description>
+    <author href="http://www.lfis.edu.hk" email="labbal@lfis.edu.hk">Laurent Abbal</author>
+	
 	<!--IOS release version--> 
 	<config-file platform="ios" parent="CFBundleShortVersionString"> 
-	<string>101</string> 
+	<string>1.0</string> 
 	</config-file> 	
 		
 	<!--IOS build number--> 
 	<config-file platform="ios" parent="CFBundleVersion"> 
-	<string>101</string> 
+	<string>1.0</string> 
 	</config-file> 	
-	
-    <author href="http://www.lfis.edu.hk" email="labbal@lfis.edu.hk">Laurent Abbal</author>
-
+		
     <!--
         If you do not want any permissions to be added to your app, add the
         following tag to your config.xml; you will still have the INTERNET
@@ -113,10 +108,6 @@
     <gap:splash src="res/screen/ios/screen-ipad-portrait.png"           gap:platform="ios"     width="768" height="1024" />
     <gap:splash src="res/screen/ios/screen-ipad-landscape.png"          gap:platform="ios"     width="1024" height="768" />
     <gap:splash src="res/screen/windows-phone/screen-portrait.jpg"      gap:platform="winphone" />
-
-    <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-    <string>100</string>
-    </gap:config-file>
 
     <!--
         Define access to external domains.
