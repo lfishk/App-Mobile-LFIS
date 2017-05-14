@@ -3,6 +3,7 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
+		versionCode="101"
 		ios-CFBundleVersion	= "101"
 		android-versionCode	= "101"
         id        = "hk.edu.lfis.lfis"
@@ -12,6 +13,16 @@
 
     <description>Lycée Français International de Hong Kong</description>
 
+	<!--IOS release version--> 
+	<config-file platform="ios" parent="CFBundleShortVersionString"> 
+	<string>101</string> 
+	</config-file> 	
+		
+	<!--IOS build number--> 
+	<config-file platform="ios" parent="CFBundleVersion"> 
+	<string>101</string> 
+	</config-file> 	
+	
     <author href="http://www.lfis.edu.hk" email="labbal@lfis.edu.hk">Laurent Abbal</author>
 
     <!--
