@@ -4,13 +4,13 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "hk.edu.lfis.lfis"
-        version   = "0.9.3">
+        version   = "1.0.0">
 
     <name>Lycée Français International de Hong Kong</name>
 
     <description>Lycée Français International de Hong Kong</description>
 
-    <author href="http://www.lfis.edu.hk" email="labbal@lfis.edu.hk">Atelier Numérique</author>
+    <author href="http://www.lfis.edu.hk" email="labbal@lfis.edu.hk">Laurent Abbal</author>
 
     <!--
         If you do not want any permissions to be added to your app, add the
