@@ -4,13 +4,13 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-		
+
 		<!--Import materialize.css-->
 		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
 		<!--Cutomization-->
 		<link type="text/css" rel="stylesheet" href="css/styles.css"/>
- 
+
 		<title></title>
 	</head>
 
@@ -33,9 +33,9 @@
 						</div>
 					</li>
 				</ul>
-			</li>	
+			</li>
 			<li class="collection-item avatar"><a href="#" onclick="window.open(encodeURI('http://pronote.fis.edu.hk'), '_blank', 'location=yes');" style="line-height:10px;"><i class="material-icons circle light-blue darken-3">school</i><span style="position:relative;top:14px;">PRONOTE<br /><span style="font-size:50%;color:silver;">secondaire fran&ccedil;ais</span></span></a></li>
-			<li class="collection-item avatar"><a href="sites.html" style="line-height:15px;"><i class="material-icons circle light-blue darken-3">web</i><span style="position:relative;top:8px;">SITES<br />PEDAGOGIQUES</span></a></li>
+			<li class="collection-item avatar"><a href="#" onclick="window.open(encodeURI('http://www.lfihk.net'), '_blank', 'location=yes');" style="line-height:15px;"><i class="material-icons circle light-blue darken-3">web</i><span style="position:relative;top:8px;">SITES<br />PEDAGOGIQUES</span></a></li>
 			<li  class="collection-item avatar">
 				<ul class="collapsible collapsible-accordion">
 					<li>
@@ -48,7 +48,7 @@
 						</div>
 					</li>
 				</ul>
-			</li>				
+			</li>
 			<li class="collection-item avatar"><a href="about_fr.html"><i class="material-icons circle light-blue darken-3">info</i>A PROPOS</a></li>
 		</ul>
 
@@ -59,15 +59,15 @@
 					<span id="button_sidebar"><a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a></span>
 					<span id="button_back" style="display:none;"><a href="#" class="button-collapse"><i class="material-icons" style="color:red;">arrow_back</i></a></span>
 				</div>
-			</nav>	
+			</nav>
 		</div>
-		
+
 		<div class="row" >
 			<div id="content" class="col s12 content">
 				<div id="xml_content"><div style="text-align:center;padding:50px 0px 0px 0px;"><img src="images/loading.gif" width="64" style="width:64px;" /></div></div>
 			</div>
 		</div>
-		
+
 		<div class="fixed-action-btn" style="bottom: 24px; right: 24px;">
 			<a class="btn-floating btn-large red">
 				<i class="material-icons large">translate</i>
@@ -82,7 +82,7 @@
 		<script type="text/javascript">
 			function read(i)
 			{
-				var element = document.getElementById(i);  
+				var element = document.getElementById(i);
 				var display = window.getComputedStyle(element, null).getPropertyValue("display");
 
 				if (display == 'none')
@@ -96,7 +96,7 @@
 						{
 							document.getElementById('title_' + n).style.display = "none";
 							document.getElementById('date_' + n).style.display = "none";
-							document.getElementById('button_sidebar').style.display = "none";							
+							document.getElementById('button_sidebar').style.display = "none";
 							document.getElementById('button_back').style.display = "inline";
 							document.getElementById('button_back').innerHTML='<a href="#a_' + i + '" onclick="read('+ i +')" class="button-collapse" style="display:inline;pointer-events:auto;"><i class="material-icons" style="color:red;">arrow_back</i></a>';
 							$(window).scrollTop(0);
@@ -105,7 +105,7 @@
 
 				} else {
 					document.getElementById(i).style.display = "none";
-		
+
 					for (n=0;n<100;n++)
 					{
 						if (n !== i)
@@ -114,12 +114,12 @@
 							document.getElementById('date_' + n).style.display = "block";
 							document.getElementById('button_sidebar').style.display = "inline";
 							document.getElementById('button_back').style.display = "none";
-							
+
 						}
 					}
 				}
 			}
-		</script>		
+		</script>
 		<script type="text/javascript">
 			function resize()
             {
@@ -131,10 +131,10 @@
             window.onresize = function() {
                 resize();
             };
-		</script>		
+		</script>
 		<script type="text/javascript" src="js/getfeed_fr.js"></script>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/materialize.min.js"></script>		
+		<script type="text/javascript" src="js/materialize.min.js"></script>
 		<script type="text/javascript" src="js/init.js"></script>
 		<script type="text/javascript" src="cordova.js"></script>
 	</body>
